@@ -36,9 +36,6 @@ time.sleep(1)
 driver.find_element(By.XPATH,'//a[@href="/men" and contains(text(),"Men")]').click()
 time.sleep(1)
 
-#driver.execute_script('window.scrollBy(0,500)')
-#time.sleep(3)
-
 #first item selected
 driver.find_element(By.XPATH,'//img[@src="/assets/catalog/1034/3600/plv7632-Green-list.png"]').click()
 driver.find_element(By.XPATH,'//a[@href="#" and contains(text(),"M")]').click()
@@ -46,8 +43,6 @@ driver.find_element(By.XPATH,'//a[@href="#" and contains(text(),"Blue")]').click
 time.sleep(1)
 driver.find_element(By.XPATH,'//button[@class="button primary outline"]').click()
 time.sleep(1)
-#driver.find_element(By.XPATH,'//a[@href="#" and contains(text(),"Continue Shopping")]')
-#.click()
 
 #Second item selected
 driver.find_element(By.XPATH,'//a[@href="/men" and contains(text(),"Men")]').click()
@@ -123,7 +118,6 @@ driver.find_element(By.XPATH,'//button[@class="button primary"]').click()
 time.sleep(1)
 
 #select Visa
-#driver.find_element(By.XPATH,'//*[@id="checkoutPaymentForm"]/div[3]/div[3]/div/div/div/div[1]/a').click()
 element = driver.find_element(By.XPATH,'//form[@id="checkoutPaymentForm"]/div[3]/div[3]/div/div/div/div[1]/a').click()
 time.sleep(1)
 driver.execute_script('window.scrollBy(0,500)')
