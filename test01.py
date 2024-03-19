@@ -4,7 +4,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from datetime import datetime
-import contextlib
 import time
 
 #Initializing driver
@@ -149,12 +148,4 @@ driver.get_screenshot_as_file('C:/Users/user/OneDrive/Workspace/Project01/files/
 print("Test succeed: "+strDateTime)
 time.sleep(1)
 driver.close()
-
-
-
-
-
-
-
-
 
